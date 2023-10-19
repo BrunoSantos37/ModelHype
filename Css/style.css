@@ -3,7 +3,19 @@
     padding: 0;
 }
 
+.header__linha1 {
+    display: flex;
+}
+
+.header__logo {
+    width: 10%;
+}
+
 .header__itens {
     display: flex;
-    margin: 0 2em;
+    margin: 0 auto;
+}
+
+.header__item {
+    margin: 0 4em;
 }
