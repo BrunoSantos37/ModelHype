@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,106 @@
 
     <link rel="stylesheet" href="/Css/style.css">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+
     <title>HypeModel</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header__linha1">
             <img class="header__logo" src="Imgs/logoBranco.svg" alt="Logo">
             <div class="header__itens">
                 <p class="header__item">Home</p>
-                <p class="header__item">About us</p>
-                <p class="header__item">Models</p>
-                <p class="header__item">Contact</p>
+                <a href="#about">
+                    <p class="header__item">About us</p>
+                </a>
+                <a href="#models">
+                    <p class="header__item">Models</p>
+                </a>
+                <a href="#contact">
+                    <p class="header__item">Contact</p>
+                </a>
             </div>
         </div>
         <div class="header__linha2">
-            <p class="header__texto">Hype Model</p>
+            <h1 class="header__title">Hype Model</h1>
+            <p class="header__texto">A empresa HYPE do momento!</p>
         </div>
 
     </header>
+
+
+    <section class="about" id="about"> 
+        <div class="about__texto">
+            <h1 class="about__title">About Us</h1>
+            <p class="about__p">Founded in Vancouver, one of the most vibrant and cultural cities in Canadá, HypeModel
+                has a history that dates back to 1990. Our journey began with a simple vision: to bring beauty to life
+                uniqueness and the extraordinary potential of talented individuals. With years of experience in the
+                fashion, we have built a dedicated and passionate team ready to launch new talent and support models
+                already established in their careers.</p>
+        </div>
+    </section />
+
+
+    <section class="modelos" id="models">
+        
+        <h1 class="modelos__title">Some Models</h1>
+
+        <div class="container">
+            <div class="row">
+              
+              <div class="col ">
+                <img class="modelos__img" src="Imgs/modelo1.avif" alt="">
+              </div>
+              <div class="col">
+                <img class="modelos__img" src="Imgs/modelo2.jpg" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img class="modelos__img" src="Imgs/modelo3.jpg" alt="">
+              </div>
+              <div class="col">
+                <img class="modelos__img" src="Imgs/modelo4.webp" alt="">
+              </div>
+              <div class="col">
+                <img class="modelos__img" src="Imgs/modelo5.webp" alt="">
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    <section class="contact"  id="contact">
+        <div class="contact__conteudo">
+            <h2 class="contact__title">Contact</h2>
+            <p class="contact__texto">Contact us! We are open from Mon to Fri, from 9:30am to 6:00pm</p>
+            <ul class="contact__list">
+                <li class="contact__item">
+                    <!-- <img src="/Imgs/location.png" alt=""> -->
+                    <p>&#128205; E Spruce st, 987 - Seattle, Canadá</p>
+                </li>
+                <li class="contact__item">
+                    <p>&#128379; +1 555-123-4567</p>
+                </li>
+                <li class="contact__item">
+                    <p>&#128231; contato@modelhype.com</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- <div class="a">
+        <img src="/Imgs/fundo.jpg" alt="">
+    </div> -->
+
+    <footer class="footer">
+        <p class="footer__p">&copy;Model Hype</p>
+    </footer>
+
 </body>
+
 </html>
