@@ -20,14 +20,13 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Impede a rolagem horizontal */
-    background-image: url(/Imgs/fundo.jpg);
-    background-attachment: fixed; 
-    background-size: cover;
-    background-position: center; 
+
 }
 
 header {
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);    height: 50vh;
+    background: rgb(118,75,162);
+    background: linear-gradient(90deg, rgba(118,75,162,1) 0%, rgba(102,126,234,1) 48%, rgba(38,240,241,1) 99%); 
+    height: 50vh;
     padding: 2em 0;
     text-align: center;
     color: var(--white);
@@ -51,6 +50,17 @@ header {
 .header__item {
     margin: 0 4em;
     color: var(--white);
+    transition: linear 500ms;
+}
+
+.header__item:hover {
+    transform: scale(1.2);
+    color: var(--black);
+    font-weight: bold;
+}
+
+.item__a {
+    text-decoration: none;
 }
 
 .header__linha2 {
@@ -61,20 +71,17 @@ header {
     font-size: 30px;
 } 
 
-
-
 .about {
-    /* background-image: url('/Imgs/fundo.jpg');
-    background-attachment: fixed; 
-    background-size: cover;
-    background-position: center; */
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-    /* padding: 50px 300px; */
+    background-image: url(/Imgs/fundo.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center; 
 }
 
 .about__texto {
@@ -90,9 +97,9 @@ header {
 }
 
 .modelos {
-    background: rgba(255, 255, 255, 0.3); /* Cor do plano de fundo com transparência */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Cor da borda com transparência */
-    backdrop-filter: blur(1px); /* Efeito de desfoque */
+    padding: 2em 0;
+    background: rgb(118,75,162);
+    background: linear-gradient(90deg, rgba(118,75,162,1) 0%, rgba(102,126,234,1) 48%, rgba(38,240,241,1) 99%); 
 }
 
 .modelos__title {
@@ -128,12 +135,9 @@ header {
 }
 
 footer {
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);    color: var(--white);
+    background: rgb(118,75,162);
+    background: linear-gradient(90deg, rgba(118,75,162,1) 0%, rgba(102,126,234,1) 48%, rgba(38,240,241,1) 99%);    color: var(--white);
     padding: 2em;
     text-align: center;
 }
 
-/* .a {
-    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0 100%);
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0 100%);
-} */
