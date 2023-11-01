@@ -1,4 +1,4 @@
- :root {
+:root {
     --white: #ffffff;
     --cian: #26f0f1;
     --black: #000000;
@@ -51,16 +51,18 @@ header {
     margin: 0 4em;
     color: var(--white);
     transition: linear 500ms;
+    text-decoration:none
+
 }
 
-.header__item:hover {
+.item__about:hover ,.item__models:hover, .item__contact:hover {
     transform: scale(1.2);
     color: var(--black);
     font-weight: bold;
 }
 
 .item__a {
-    text-decoration: none;
+    text-decoration:none
 }
 
 .header__linha2 {
